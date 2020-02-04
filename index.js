@@ -34,7 +34,7 @@ io.connect(serverl);
 mongoose.connect('mongodb://localhost:27017/BellLabs', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
+    useFindAndModify: false 
 }).then(() => {
     console.log("Successfully connected to the database"); 
        
