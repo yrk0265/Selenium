@@ -1,7 +1,7 @@
 const Charts = require('../models/charts');
 // const soc=require('./socket');
 const soc = require('../realtime');
-module.exports = function(server,io) {
+module.exports = function(server,io)  {
     var that={};
     server.put('/Charts/:id', (req, res, next) => {
         if (!req.is('application/json')) {
