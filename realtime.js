@@ -11,7 +11,7 @@ const sio = require('socket.io');
 //         }
 //     }
 // }
-let io;
+let io; 
 function connect(server){
     sio(server).on('connection', function(socket) {
         console.log("Connected socket");
